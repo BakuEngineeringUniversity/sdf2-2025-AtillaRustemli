@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/renderer",
+    "jsx": "react-jsx",
+    "types": ["vite/client"]
+  },
+  "include": [
+    "src/renderer/**/*.ts",
+    "src/renderer/**/*.tsx",
+    "src/shared/**/*.ts",  
+    "src/shared/**/*.tsx",  
+    "vite-env.d.ts"   
+  ],
+  "exclude": [
+    "src/main/**/*",
+    "node_modules"
+  ]
+}
